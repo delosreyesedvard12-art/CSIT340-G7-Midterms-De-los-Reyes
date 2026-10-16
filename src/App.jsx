@@ -1,8 +1,6 @@
 import { useState } from "react";
 import NavBar from "./components/NavBar";
 import Profile from "./components/Profile";
-import Bio from "./components/Bio";
-import StatCard from "./components/StatCard";
 import Repositories from "./components/Repositories";
 import Footer from "./components/Footer";
 
@@ -44,9 +42,7 @@ function App() {
 
       <div className="flex items-end justify-between bg-[#F5E7C6] px-20 py-10">
         <div>
-          <Profile />
-          <Bio /> 
-          <StatCard followers={followers} rate={rate} />
+          <Profile followers={followers} rate={rate} />
         </div>
 
         <div className="flex gap-4">
